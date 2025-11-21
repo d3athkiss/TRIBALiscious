@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRIBALiscious</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+ <header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="TRIBALiscious Logo" class="brand-logo-img" />
+      <span>TRIBALiscious</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#tribes">Tribes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form id="searchForm" class="search">
+      <input type="search" id="searchInput" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <main class="hero" id="home">
+    <section class="hero-copy">
+      <span class="eyebrow">Bukidnon Food Heritage</span>
+      <h1>Discover the Flavors of the 7 Tribes</h1>
+      <p>Each tribe of Bukidnon has unique dishes that reflect their culture, rituals, and respect for nature. Explore traditional recipes passed down through generations.</p>
+      <a href="#tribes" class="cta">Explore Tribal Foods</a>
+    </section>
+    <aside class="hero-visual">
+      <!-- Binaki card -->
+<div class="card">
+  <div class="badge">Bukidnon Tribe</div>
+  <img src="binaki.jpg" alt="Binaki corn pudding" />
+  <div class="content">
+    <h3>Binaki</h3>
+    <p>Steamed corn pudding wrapped in husks, enjoyed during harvest festivals.</p>
+    <a href="binaki.html" class="info-btn food-btn">Ingredients / History</a>
+  </div>
+</div>
+<!-- Sinina card -->
+<div class="card">
+  <div class="badge">Manobo Tribe</div>
+  <img src="beefsinina.jpg" alt="Sinina beef stew" />
+  <div class="content">
+    <h3>Sinina</h3>
+    <p>A rich beef or carabao stew cooked with spices, often served at weddings.</p>
+    <a href="sinina.html" class="info-btn food-btn">Ingredients / History</a>
+  </div>
+</div>
+    </aside>
+  </main>
+  <!-- Tribes Section -->
+<section class="tribes" id="tribes">
+  <div id="tribes-section"></div>
+  <h2>Foods of Bukidnon’s Tribes</h2>
+  <section id="tribes">
+  <!-- Bukidnon Tribe -->
+  <div id="bukidnon-tribe" class="tribe-card">
+    <h3>Bukidnon Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="binaki">
+        <img src="binaki.jpg" alt="Binaki" />
+        <a href="binaki.html" class="info-btn">Binaki</a>
+      </div>
+      <div class="food-item" data-name="linupak">
+        <img src="linupak.jpg" alt="Linupak" />
+        <a href="linupak.html" class="info-btn">Linupak</a>
+      </div>
+      <div class="food-item" data-name="inubaran">
+        <img src="inubaran.jpg" alt="Inubaran" />
+        <a href="inubaran.html" class="info-btn">Inubaran</a>
+      </div>
+    </div>
+  </div>
+  <!-- Manobo Tribe -->
+  <div id="manobo-tribe" class="tribe-card">
+    <h3>Manobo Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="sinina">
+        <img src="beefsinina.jpg" alt="Sinina" />
+        <a href="sinina.html" class="info-btn">Sinina</a>
+      </div>
+      <div class="food-item" data-name="kahawa">
+        <img src="kahawa.png" alt="Kahawa Sug" />
+        <a href="kahawa.html" class="info-btn">Kahawa Sug</a>
+      </div>
+      <div class="food-item" data-name="puto">
+        <img src="puto.jpg" alt="Puto Balanghoy" />
+        <a href="puto.html" class="info-btn">Puto Balanghoy</a>
+      </div>
+    </div>
+  </div>
+  <!-- Matigsalug Tribe -->
+  <div id="matigsalug-tribe" class="tribe-card">
+    <h3>Matigsalug Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="tinalombo">
+        <img src="tinalombo.jpg" alt="Tinalombo" />
+        <a href="tinalombo.html" class="info-btn">Tinalombo</a>
+      </div>
+      <div class="food-item" data-name="ginamos">
+        <img src="ginamos.JPG" alt="Ginamos" />
+        <a href="ginamos.html" class="info-btn">Ginamos</a>
+      </div>
+      <div class="food-item" data-name="binugsong">
+        <img src="binugsong.jpg" alt="Binugsong na Manok" />
+        <a href="binugsong.html" class="info-btn">Binugsong na Manok</a>
+      </div>
+    </div>
+  </div>
+  <!-- Talaandig Tribe -->
+  <div id="talaandig-tribe" class="tribe-card">
+    <h3>Talaandig Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="lulot">
+        <img src="lulot.jpg" alt="L'lulot na Baboy" />
+        <a href="lulot.html" class="info-btn">L'lulot na Baboy</a>
+      </div>
+      <div class="food-item" data-name="nilupak nga kamote">
+        <img src="kamote.jpg" alt="Nilupak nga Kamote" />
+        <a href="nilupak-kamote.html" class="info-btn">Nilupak nga Kamote</a>
+      </div>
+      <div class="food-item" data-name="inasal">
+        <img src="inasal.jpg" alt="Inasal nga Manok" />
+        <a href="inasal.html" class="info-btn">Inasal nga Manok</a>
+      </div>
+    </div>
+  </div>
+  <!-- Higaonon Tribe -->
+  <div id="higaonon-tribe" class="tribe-card">
+    <h3>Higaonon Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="sinuglaw">
+        <img src="sinuglaw.jpg" alt="Sinuglaw" />
+        <a href="sinuglaw.html" class="info-btn">Sinuglaw</a>
+      </div>
+      <div class="food-item" data-name="utan">
+        <img src="utan.jpg" alt="Utan Bisaya" />
+        <a href="utan.html" class="info-btn">Utan Bisaya</a>
+      </div>
+      <div class="food-item" data-name="yam">
+        <img src="yam.jpg" alt="Wild Yam" />
+        <a href="wild-yam.html" class="info-btn">Wild Yam</a>
+      </div>
+    </div>
+  </div>
+  <!-- Umayamnon Tribe -->
+  <div id="umayamnon-tribe" class="tribe-card">
+    <h3>Umayamnon Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="inaloban">
+        <img src="inalobonan.jpg" alt="Inaloban" />
+        <a href="inaloban.html" class="info-btn">Inaloban</a>
+      </div>
+      <div class="food-item" data-name="taro">
+        <img src="taro.jpg" alt="Boiled Taro" />
+        <a href="taro.html" class="info-btn">Boiled Taro</a>
+      </div>
+      <div class="food-item" data-name="umbrian fish soup">
+        <img src="umbarian.png" alt="Umbrian Fish Soup" />
+        <a href="riverfish.html" class="info-btn">Umbrian Fish Soup</a>
+      </div>
+    </div>
+  </div>
+  <!-- Tigwahanon Tribe -->
+  <div id="tigwahanon-tribe" class="tribe-card">
+    <h3>Tigwahanon Tribe</h3>
+    <div class="food-gallery">
+      <div class="food-item" data-name="linotlot">
+        <img src="linotlot.jpg" alt="Linotlot" />
+        <a href="linotlot.html" class="info-btn">Linotlot</a>
+      </div>
+      <div class="food-item" data-name="tinola">
+        <img src="native.jpg" alt="Native Chicken Tinola" />
+        <a href="tinola.html" class="info-btn">Native Chicken Tinola</a>
+      </div>
+      <div class="food-item" data-name="kamote cue">
+        <img src="kamotecue.jpg" alt="Kamote Cue" />
+        <a href="kamote.html" class="info-btn">Kamote Cue</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Modal Popup -->
+  <div id="foodModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="foodTitle"></h3>
+      <p id="foodHistory"></p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 TRIBALiscious — Celebrating the food heritage of Bukidnon.
+  </footer>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
