@@ -1596,7 +1596,7 @@ header.nav,
     grid-template-columns: 1fr;
   }
 }
-=======
+
 /*Tribal patterns*/
 body::before {
   content: "";
