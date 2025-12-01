@@ -509,6 +509,18 @@ body {
   color: #555;
 }
 
+.top-author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.bottom-authors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
   .author-grid {
     grid-template-columns: 1fr;
