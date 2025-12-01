@@ -1580,21 +1580,3 @@ header.nav,
 .footer-content a:hover {
   color: #944a18;
 }
-/* === Footer Styling === */
-.footer {
-  background-color: #f7c948; /* tribal yellow */
-  width: 100%;
-  display: block;
-  text-align: center;
-  padding: 20px 0;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 40px;
-  position: relative;
-}
-
-/* Footer text */
-.footer-content p {
-  margin: 0;
-  color: #000;
-  font-size: 0.95rem;
-}
