@@ -567,15 +567,7 @@ input[type="search"]:focus {
   margin-bottom: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-/* Authors section card */
-.about-authors {
-  border: 2px solid #2e8b57; /* forest green border for variety */
-  border-radius: 12px;
-  background-color: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
+
 :root {
   --bg-yellow: #ffd84d;
   --text-dark: #1a1a1a;
@@ -1016,40 +1008,6 @@ html, body {
   padding-left: 20px;
 }
 
-.about-authors {
-  margin-top: 50px;
-}
-
-.author-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.author-card {
-  text-align: center;
-  background: var(--nav-light);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-
-.author-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 12px;
-}
-.highlight-section {
-  outline: 3px solid var(--accent);
-  animation: fadeOutline 2s ease;
-}
-
-@keyframes fadeOutline {
-  from { outline-color: var(--accent); }
-  to { outline-color: transparent; }
-}
 .suggestions {
   position: absolute;
   background: #fff;
@@ -1134,25 +1092,6 @@ input[type="search"]:focus {
 /* Optional: glow effect when focused */
 input[type="search"]:focus {
   box-shadow: 0 0 6px var(--accent, #ff6b35);
-}
-
-/* === ABOUT PAGE SECTION CARDS === */
-.about-section {
-  border: 2px solid #b35c1e; /* earthy orange-brown */
-  border-radius: 12px;
-  background-color: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-/* Authors section card */
-.about-authors {
-  border: 2px solid #2e8b57; /* forest green border for variety */
-  border-radius: 12px;
-  background-color: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* ===== CONTACT PAGE ===== */
@@ -1558,42 +1497,4 @@ header.nav,
 .footer-content p {
   margin: 5px 0;
   color: #000;
-}
-/* Author Card Styling */
-.author-card {
-  background-color: #fff;
-  border: 2px solid #b35c1e;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* Circular Author Images */
-.author-img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%; /* makes it a circle */
-  margin-bottom: 15px;
-  border: 3px solid #f7c948; /* optional yellow border */
-}
-
-/* Author Text */
-.author-card h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.author-card p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Responsive fallback for mobile */
-@media (max-width: 768px) {
-  .author-grid {
-    grid-template-columns: 1fr;
-  }
 }
