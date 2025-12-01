@@ -463,6 +463,18 @@ html, body {
   object-fit: cover;
   margin-bottom: 12px;
 }
+.top-author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.bottom-authors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .highlight-section {
   outline: 3px solid var(--accent);
   animation: fadeOutline 2s ease;
