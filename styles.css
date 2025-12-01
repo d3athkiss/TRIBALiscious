@@ -257,7 +257,7 @@ body {
   color: var(--text-muted);
 }
 
-/* Info button inside cards */
+/* Info button */
 .info-btn {
   border: none;
   background: var(--accent);
@@ -274,12 +274,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Sale badge / tribe label */
-.tribe-card {
-  margin-bottom: 40px;
-  transition: all 0.3s ease;
-}
-
+/* Badge */
 .badge {
   position: absolute;
   top: 12px;
@@ -294,6 +289,54 @@ body {
 }
 
 /* Tribes section */
+.tribes {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.tribes h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.tribe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.tribe-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.tribe-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.tribe-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tribe-card li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+/* Food buttons */
 .food-buttons {
   display: flex;
   flex-direction: column;
@@ -348,51 +391,6 @@ body {
   width: 100%;
   padding: 10px 14px;
   font-size: 15px;
-}
-
-.tribes {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.tribes h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.tribe-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.tribe-card {
-  background: var(--white);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  padding: 20px;
-}
-
-.tribe-card h3 {
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.tribe-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.tribe-card li {
-  margin-bottom: 8px;
-  font-size: 15px;
-  color: var(--text-dark);
 }
 
 /* Recipe Page */
@@ -473,59 +471,49 @@ body {
   padding-left: 20px;
 }
 
-/* Meet the Authors Section */
 .about-authors {
-  background: rgba(255, 255, 255, 0.8);
-  border: 6px solid #d4a346; /* gold border */
-  border-radius: 15px;
-  width: 70%;
-  margin: 40px auto;
-  padding: 40px 20px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-
-  /* FIX: ensure content stays inside border */
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
+  border: 2px solid #2e8b57;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
 }
 
-/* Author grids */
 .author-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 
-/* Ensure Alexace is centered */
-.top-author {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.bottom-authors {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-/* Same card style */
 .author-card {
   text-align: center;
-  width: 220px;
+  background-color: #fff;
+  border: 0px solid #000000;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Fix circular borders */
 .author-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  border: 4px solid #d7a449;
-  padding: 3px;
-  background: white;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #f7c948;
+}
+
+.author-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.author-card p {
+  font-size: 0.95rem;
+  color: #555;
 }
 
 @media (max-width: 768px) {
@@ -811,7 +799,7 @@ body {
   }
 }
 
-/* Suggestions (Search) */
+/* Suggestions */
 .suggestions {
   position: absolute;
   background: #fff;
