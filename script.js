@@ -125,3 +125,18 @@ document.addEventListener("click", e => {
     suggestionsBox.style.display = "none";
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchForm && searchInput) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const query = searchInput.value.trim();
+      if (query) {
+        // Redirect to search results page or filter content
+        window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+      }
+    });
+  }
+});
