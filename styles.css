@@ -1407,7 +1407,7 @@ input[type="search"]:focus {
 }
 /* === CONTACT PAGE === */
 .contact-page {
-  background-color: #ffffff; /* clean white background */
+  background-color: #ffd84d; /* clean white background */
   padding: 40px 20px;
   font-family: 'Poppins', sans-serif;
 }
