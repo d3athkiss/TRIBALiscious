@@ -489,15 +489,6 @@ body {
   gap: 24px;
 }
 
-.author-card {
-  text-align: center;
-  background-color: #fff;
-  border: 2px solid #b35c1e;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
 .author-img {
   width: 160px;
   height: 160px;
@@ -771,7 +762,7 @@ body {
   margin: 5px 0;
   font-size: 14px;
   line-height: 1.6;
-  color: #000;
+  color: #ffd84d;
 }
 
 .footer a {
