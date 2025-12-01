@@ -473,53 +473,60 @@ body {
   padding-left: 20px;
 }
 
+/* Meet the Authors Section */
 .about-authors {
-  border: 2px solid #2e8b57;
-  border-radius: 12px;
-  background-color: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .author-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.author-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid #f7c948;
-}
-
-.author-card h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.author-card p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.top-author {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.bottom-authors {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+/* Top Author Center Alignment */
+.top-author .author-card {
+  margin: 0 auto;
 }
+
+/* Author Card Design with Tribal Border */
+.author-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  width: 230px;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  border: 3px solid #5e3b16; /* EARTH / TRIBAL COLOR */
+}
+
+/* Optional: tribal inner shadow effect */
+.author-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 5px;
+  border: 2px dashed #a97435; /* tribal pattern color */
+  pointer-events: none;
+}
+
+/* Author Images */
+.author-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #5e3b16; /* matches the card */
+  padding: 3px;
+  background: white;
+}
+
 
 @media (max-width: 768px) {
   .author-grid {
