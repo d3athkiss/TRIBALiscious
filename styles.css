@@ -1406,7 +1406,6 @@ input[type="search"]:focus {
   opacity: 0.8;
 }
 /* === CONTACT PAGE === */
-/* === CONTACT PAGE === */
 .contact-page {
   background-color: #f7c948; /* same as header and footer */
   padding: 40px 20px;
@@ -1554,14 +1553,6 @@ header.nav,
 
 .social-icon:hover {
   color: #b35c1e;
-}
-
-/* Footer */
-.footer {
-  background-color: #f7c948; /* same header color */
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
 }
 
 .footer-content p {
