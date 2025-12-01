@@ -442,18 +442,47 @@ html, body {
   margin-top: 50px;
 }
 
+/* === Author Grid 2x2 Layout === */
 .author-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px; /* spacing between cards */
+  margin-top: 30px;
 }
 
+/* Author Card Styling */
 .author-card {
-  text-align: center;
-  background: var(--nav-light);
-  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #b35c1e; /* earthy accent */
   border-radius: 12px;
-  box-shadow: var(--shadow);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.author-card img.author-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.author-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.author-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive fallback for mobile */
+@media (max-width: 768px) {
+  .author-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
 }
 
 .author-img {
