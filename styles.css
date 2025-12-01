@@ -1559,3 +1559,33 @@ header.nav,
   margin: 5px 0;
   color: #000;
 }
+.footer {
+  background-color: #f7c948; /* tribal yellow */
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  margin: 6px 0;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.footer-content a {
+  color: #b35c1e;
+  text-decoration: underline;
+}
+
+.footer-content a:hover {
+  color: #944a18;
+}
