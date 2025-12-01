@@ -1115,8 +1115,6 @@ input[type="search"]:focus {
   -webkit-appearance: none;
   display: none;
 }
-
-
 .search button {
   border: none;
   background: var(--nav-dark);
