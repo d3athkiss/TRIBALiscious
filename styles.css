@@ -1102,6 +1102,25 @@ input[type="search"]:focus {
   box-shadow: 0 0 6px var(--accent, #ff6b35);
 }
 
+/* === ABOUT PAGE SECTION CARDS === */
+.about-section {
+  border: 2px solid #b35c1e; /* earthy orange-brown */
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* Authors section card */
+.about-authors {
+  border: 2px solid #2e8b57; /* forest green border for variety */
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 /* ===== CONTACT PAGE ===== */
 .contact-page {
   background: var(--bg-yellow);
