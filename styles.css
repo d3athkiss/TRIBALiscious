@@ -25,8 +25,7 @@ body {
   z-index: 1;
 }
 
-/* ===== NAVIGATION ===== */
-
+/* Navigation */
 .nav {
   width: 100%;
   position: sticky;
@@ -99,8 +98,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* ===== SEARCH ===== */
-
+/* Search */
 .search {
   display: flex;
   align-items: center;
@@ -119,11 +117,11 @@ body {
   border: none;
   outline: none;
   background: transparent;
+  box-shadow: none;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   padding: 6px 8px;
   width: 180px;
-  box-shadow: none;
 }
 
 .search input:focus,
@@ -152,8 +150,7 @@ body {
   opacity: 0.9;
 }
 
-/* ===== HERO SECTION ===== */
-
+/* Hero */
 .hero {
   max-width: 1200px;
   margin: 40px auto;
@@ -222,8 +219,7 @@ body {
   background: var(--accent-dark);
 }
 
-/* ===== HERO VISUAL CARDS ===== */
-
+/* Hero visual cards */
 .hero-visual {
   position: relative;
   display: grid;
@@ -261,6 +257,7 @@ body {
   color: var(--text-muted);
 }
 
+/* Info button inside cards */
 .info-btn {
   border: none;
   background: var(--accent);
@@ -277,6 +274,12 @@ body {
   transform: translateY(-2px);
 }
 
+/* Sale badge / tribe label */
+.tribe-card {
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
 .badge {
   position: absolute;
   top: 12px;
@@ -290,57 +293,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* ===== TRIBES SECTION ===== */
-
-.tribes {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.tribes h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.tribe-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.tribe-card {
-  background: var(--white);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  padding: 20px;
-  margin-bottom: 40px;
-  transition: all 0.3s ease;
-}
-
-.tribe-card h3 {
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.tribe-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.tribe-card li {
-  margin-bottom: 8px;
-  font-size: 15px;
-  color: var(--text-dark);
-}
-
-/* ===== FOOD SECTION ===== */
-
+/* Tribes section */
 .food-buttons {
   display: flex;
   flex-direction: column;
@@ -397,8 +350,52 @@ body {
   font-size: 15px;
 }
 
-/* ===== RECIPE PAGE ===== */
+.tribes {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
+.tribes h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.tribe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.tribe-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.tribe-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.tribe-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tribe-card li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+/* Recipe Page */
 .recipe-page {
   max-width: 860px;
   margin: 60px auto;
@@ -448,8 +445,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* ===== ABOUT PAGE ===== */
-
+/* About Page */
 .about-page {
   max-width: 960px;
   margin: 60px auto;
@@ -528,8 +524,7 @@ body {
   }
 }
 
-/* ===== CONTACT PAGE ===== */
-
+/* Contact Page */
 .contact-page {
   background: var(--bg-yellow);
   padding-bottom: 60px;
@@ -583,7 +578,6 @@ body {
 }
 
 /* Contact Form Section */
-
 .contact-form-section {
   flex: 1 1 55%;
   border: 2px solid #b35c1e;
@@ -660,7 +654,6 @@ body {
 }
 
 /* Contact Info Section */
-
 .contact-info-section {
   flex: 1 1 40%;
   border: 2px solid #2e8b57;
@@ -731,7 +724,6 @@ body {
 }
 
 /* Social Links */
-
 .social-links {
   margin-top: 30px;
   padding-top: 24px;
@@ -761,8 +753,7 @@ body {
   color: #b35c1e;
 }
 
-/* ===== FOOTER ===== */
-
+/* Footer */
 .footer {
   background: var(--nav-dark);
   color: white;
@@ -794,8 +785,7 @@ body {
   opacity: 0.8;
 }
 
-/* ===== HIGHLIGHTS & ANIMATIONS ===== */
-
+/* Highlights & Animations */
 .highlight-section {
   outline: 3px solid var(--accent);
   animation: fadeOutline 2s ease;
@@ -810,8 +800,7 @@ body {
   }
 }
 
-/* ===== SUGGESTIONS (SEARCH) ===== */
-
+/* Suggestions (Search) */
 .suggestions {
   position: absolute;
   background: #fff;
@@ -834,8 +823,7 @@ body {
   color: #fff;
 }
 
-/* ===== TRIBAL PATTERN BACKGROUND ===== */
-
+/* Tribal Pattern Background */
 body::before {
   content: "";
   position: fixed;
