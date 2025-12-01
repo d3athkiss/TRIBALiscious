@@ -454,12 +454,19 @@ html, body {
    FOOTER
 ======================= */
 .footer {
-  margin-top: 40px;
-  padding: 26px 20px;
+  width: 100%;
+  background: #F4C542; /* your site's yellow */
   text-align: center;
+  padding: 25px 20px;
   font-weight: 600;
-  color: var(--nav-dark);
+  border-top: 4px solid #ff7a00; /* orange line */
+  box-sizing: border-box;
+  color: #000; /* black text */
+  margin-top: 60px;
+  position: relative;
+  z-index: 10;
 }
+
 
 .footer a {
   font-weight: 700;
