@@ -1,12 +1,12 @@
 :root {
-  --bg-yellow: #ffd84d;
+  --bg-yellow: #b80000;
   --text-dark: #1a1a1a;
   --text-muted: #5a5a5a;
   --white: #ffffff;
-  --accent: #ff6b35;
-  --accent-dark: #e55b2c;
-  --nav-dark: #0f0f0f;
-  --badge-red: #ff3b30;
+  --accent: #ffd84de6;
+  --accent-dark: #fffa68;
+  --nav-dark: #9084ff;
+  --badge-red: #5c67ff;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -31,7 +31,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 216, 77, 0.9);
+  background: #020c9b;
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -753,7 +753,7 @@ body {
 
 /* Footer */
 .footer {
-  background: rgba(255, 216, 77, 0.9);
+  background: #020c9b;
   color: var(--nav-dark);
   padding: 30px 20px;
   text-align: center;
@@ -843,3 +843,4 @@ body::before {
     background-position: 120px 80px;
   }
 }
+
